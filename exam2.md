@@ -5,12 +5,14 @@
 - This exam consists of four interconnected questions analyzing MS patient data
 - Submit your solutions as separate files with the names specified in each question
 - Each question builds upon the previous ones - complete them in order
+- If you get stuck, reach out to the TA for assistance. 
 
 ## Data Validation Checkpoints
 
 After each step, verify your results:
 
-- Q1: Cleaned CSV should have no empty lines, comments, or extra commas
+- All questions: Summarize your efforts and results in `readme.md`
+- Q1: Cleaned CSV should be named `ms_data.csv` and have no empty lines, comments, or extra commas
 - Q2: All patients should have consistent insurance types across visits
 - Q3: Check for outliers before running statistical tests
 - Q4: Verify plot readability by viewing at different zoom levels
@@ -19,7 +21,7 @@ After each step, verify your results:
 
 File name: `prepare.sh`
 
-You are provided with a raw CSV file containing longitudinal walking speed measurements. Create a shell script `prepare.sh` that prepares this dataset and extracts categorical variables.
+You are provided with a raw CSV file containing longitudinal walking speed measurements. Create a shell script `prepare.sh` that performs data cleaning using command line tools.
 
 Your tasks:
 
@@ -30,6 +32,7 @@ Your tasks:
    - Remove empty lines
    - Remove extra commas
    - Extract essential columns: patient_id, visit_date, age, education_level, walking_speed
+   - Save the file as `ms_data.csv`
 
 3. Create a file, `insurance.lst` listing unique labels for a new variable, `insurance_type`, one per line (your choice of labels).
 
