@@ -34,10 +34,10 @@ Your tasks:
    - Extract essential columns: patient_id, visit_date, age, education_level, walking_speed
    - Save the file as `ms_data.csv`
 
-3. Create a file, `insurance.lst` listing unique labels for a new variable, `insurance_type`, one per line (your choice of labels).
+3. Create a file, `insurance.lst` listing unique labels for a new variable, `insurance_type`, one per line (your choice of labels). Depending on how you want to import this file later with Python, you may or may not want to add a header row nameing the column as `insurance_type`.
 
 4. Generate a summary of the processed data:
-   - Count the total number of visits
+   - Count the total number of visits (rows, not including the header)
    - Display the first few records
 
 Tips:
